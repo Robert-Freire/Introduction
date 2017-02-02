@@ -1,0 +1,3 @@
+https://developer.mozilla.org/es/docs/Web/JavaScript/Herencia_y_la_cadena_de_protipos#Con_la_palabra_reservada_class
+
+Lo que se pide en este ejercicio es crear una nueva clase lamada raceCar que en el constructor tenga un nuevo parametro topspeed y que tenga una funcion llamada goFast que ponga el coche a la maxima velociadad

@@ -1,0 +1,6 @@
+En // https://jsbin.com/mudakeg/edit?js,console  
+
+tienen un programa escrito en javascript ES5, que viene a ser un objeto Car con su función pública printCurrentSpeed. 
+ La idea es pasarlo a ECMA 5 usando los constructores de javascript
+
+ https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes#Declaración_de_clases

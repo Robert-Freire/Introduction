@@ -1,0 +1,83 @@
+Objetivo del curso
+
+   Este es un curso de nivel 100. Es de introducción or lo que el objetivo no va a ser mostrar Angular 2 sino que entendais un poco las herramientas que utilizamos en desarrollo de front end en general y que utilizareis con Angular 2 en particular. Para que cuando llegues a utilizarlo en el proximo curso se tenga un minimo de base de cnocimientos y sepamos para que sirven las diferentes herramientas. O sea el objetivo que me he planteado es que todos partamos de un minimo croquis mental de como es el desarrollo en front end actualmente
+
+	ECMA 6 angularjs, angular2, grunt, gulp webpack, browserify, react, flux, typescript, babel, npm, bower, html, css, less, sass
+
+Porque todo esto. Si al final lo unico que necesitas es un editor de texto para crear tu script en js y ponero a funcionar. Estan todos locos?
+
+Si :-)
+
+Y porque?
+
+La probematica en front end es ligeramente diferente que en backend. 
+
+   Aqui no se desarrollan en un lenguaje normal sino en un lenguaje de scripting que sera interpretado por diferentes programas "navegadores" que aunque "en teoria" todos lo hacen igual en realidad interpretan de forma a veces sutilemnete diferente y otras simplemente ciertas implementaciones del estandard no las cubren en ciertas versiones. Existe un problema de retrocompatbilidad que no existe en backend donde yo seleciono en que maquinas se puede ejecutar. Pueden salir nuevas versiones del lenguje. Pero si los navegares usados por el consumidor de mis programas no los soportan yo no  "puedo" utilizarlo
+
+   La presentación es muy impotante por eso tenemos lenguajes especificos para las presentaciones como css y html, pero que mientras estos lenguajes hacen bien su labor de separar la presentación de los datos dejan mucho de desear en el tema DRY. A partir de alli la abundancia de lenguajes como less, Sass, o diferentes sitemas de templates en los que esta bien escribir ya que evitas repetirte tanto pero que no pueden ser interpretados como javascript, html, css por lo que necesitas "compilar" tu codigo al lenguaje interpretado por el usuario.
+
+
+Tambien tiene "probemas" que hay gente que no cree que exitan 
+
+   Corre por internet una vieja broma que dice "JavaScript is the only language developers don't learn to use before using it." Puede ser una broma pero tiene algo de verdad. Javascript ha sido ampliamente usado y abusado. Se ha usado muy mal durante mucho tiempo ha tenido muy mala fama. Al ser un lenguaje tan "libre" permite hacer muchisimas cosas de formas diferentes y muchas de forma poco organizada y caotica. Los frameworks vienen a intentan ayudarnos a organizarnos y a fomentar formas mas eficientes y estructuradas de programar
+
+   Javascript al ser un lenguaje debilmente tipado nos da mucha libertad, tanta que muchas de las herramientas que se usan en backend para checkear posibles codigos o para refactorizar no pueden ser usadas con el
+
+Aunque tambien tenemos algunos de los mismos problemas que en backend
+
+	Cuando escribimos codigo reaprovechamos codigo (librerias) que otros han hecho y necesitamos programas que nos ayuden a gestionar estas dependencias
+
+Y algunos que potenciamos con todo lo que estamos haciendo para trabajar mejor
+
+    Al distaciar tanto nuestro codigo "ejecutable" de nuestro codigo de desarrollo necesitamos algo que se encargue de hacer estas transformaciones que ademas pueden ser muchas y diveras. Ya no es el problema de compilar y linkar el codigo que tienen en backend (aqui tenemos que transpilar diferentes lenguajes (css/js)), ademas a veces tambien queremos transformarlos (mimificarlos) convertirlos en uno o varios archivos, para resolver estos problemas surgen dos tipos de programas los de automiztacion de tareas (gulp/grunt) y los module bundle o file procesors (webpack/browserify )
+
+  De aqui podemos comenzar a definir los problemas y que soluciones se ofrecen
+
+     Retrocompatibilidad. Inicalmente se abordo mediante polyfills, pero a medida que las diferencias han aumentado esta resulta muy compliacda (y cara en recursos al tener que enviar a todolos los browser todos los polifills) por lo ue ultimamente se opta por "compilar" o hablando con propiedad transpilar javascript de la version que queremos trabajar a la versión minima en que debe funcionar  (babel)
+
+     Parametrización y DRY en CSS. El lenguaje CSS es poco  parametrizable y formnta la repetición de codigo para evitar eso surgen los lenguajes de hojas de estilos (LESS y SASS)
+
+     Organización del codigo y agilidad del desarrollo: Los framewokrs intentan ayudarnos con ello (Angular, Angular2, Redux, React)
+
+     Gestion de dependencias: npm y bower
+
+     Generación de codigo de ejecución
+
+     Automatización de tareas : (gulp, grunt)
+
+     Automatización de tareas / Procesamiento de ficheros: (webpack, browserify)/npm
+
+
+
+1- ECMA 6
+http://www.wintellect.com/devcenter/nstieglitz/5-great-features-in-es6-harmony
+
+ECMA 6 añade soporte a clases
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes
+
+
+
+Os paso un programa en js 5
+https://jsbin.com/zewubo/edit?js,console
+https://es6console.com/iyn7bke3/
+
+
+1- Simplemente se crea un objeto coche que se puede acelerar lo muestro yo
+2- les pido que creen un heredore que se inicialize a mas velocidad
+3- una funcion que acelere la velocidad
+4- Objeto this? lo han utilizado? Pasar a arrow sintax 
+5. Promesas integradas.  Convertir la fucnion acelerar a promesas, se puede crear el objeto aceleración y utilizar race
+
+
+6 -- instalar webpack
+
+  Ver lo modulos en ecma 6 y ver como con webpack se pueden hacer servir
+
+7 --  comenzar a añadir features de typescript al codigo previo
+   aádir tipos
+   aádir interfaces
+   implementar interfaces
+
+
+RxJs
+http://jsbin.com/vujuza/1/edit?html,js,console,output

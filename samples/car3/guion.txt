@@ -1,0 +1,11 @@
+Ahora nos dicen que los coches de carrearas arrancan a la misma velocidad que os demas pero un segundo despues aceeran 5km/h
+
+Implemento la siguiente solución. Superfeliz. Pero no funciona. Alguien me puede explicar poruqe no funciona?
+
+Vale. Lo arreglamos definiendo nuestro "this"
+
+Ahora una cosa nueva que ofrece js es las arrow function que sustituten a las funcionens anonuimas
+
+Pero no son solo sugar. Ya que ellas no definen su this.
+
+Eso significa que el this que yo suleo esperar se corresponde con el que me frecen ellas

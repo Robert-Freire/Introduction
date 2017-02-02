@@ -1,0 +1,11 @@
+Las promesas hasta la legada de ecma6 era algo que se usaba mucho pero como el lenguje no las ofrecia era a traves de librerias externas como RSPV.js, Q.js o el servio q$ de angular. Ahora ya vienen integradas con el lenguaje
+
+
+el siguiente problema es implementar la funcion a todo gas que debuelve una promesa que se cumple cuando el coche se pone a su velocidad maxima o sea que necesitamos en el constructor tambien pedir el valor de aceleración
+
+la promesa devolvera el objeto que la cumple y al resolverla imprimeremos la velociada alcanzada por el coche 
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise#Creating_a_Promise
+
+
+La libreria de promesas nos ofrece mas coass aparte de lo tradiconal then reject. La propuesta ahora es poner los dos coches a tope y avisarnos del promero que llega a velocidad maxima
