@@ -1,0 +1,11 @@
+# Dependency directory
+node_modules/
+bower_components/
+npm-debug.log
+typings/
+bundle.js
+bundle.js.map
+out/
+dist/
+build/
+karma_html/

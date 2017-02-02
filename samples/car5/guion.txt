@@ -1,0 +1,43 @@
+Lo primero es intalar webpack. Aui encontrareis las intrucciones
+
+https://webpack.js.org/guides/get-started/
+
+npm init -y
+npm install --save-dev webpack
+
+Creamos el archivo webpack.config.js
+
+Y ya nos genera el bundle
+
+El siguiente paso sera comenzar a partir nustros js. En diferentes archivos de forma que no sea mas facilmente organizabble.
+
+Hasta ecma6 un js realmente no sabia/decia que necesitava por lo que era labor del desarrollador de asegurarse de que todas las dependecias de un js estuviesen cargadas y sino petaba al ejecutarse
+
+Con ECMA 6 podemos exportar los miembros publicos de nustros archivos e importarlos desde otros de esta forma no necesitamos otros programas/librerias que nos gestionen estas dependecias
+
+El siguiente paso sera utilizar los imports y exports de ECMA6 para partir y relacionar nuestrios archivos
+Crearemos tres archivos car, racecar e index1 en el primero pondremos la clase publica car, en el segundo la clase publica raceCar y en el ultimo el resto
+
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/import
+
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Sentencias/export
+
+Como veresis la sintacis de import y export es muy abierta. Para este ejercicio una propuesta puede ser utilizar el export antes del ombre de la clase export class classname  y los import usando la sintaxis import myModule from "my-module.js";
+
+El codigo generado en el bundle sigue siendo ecma6 aunque webpack halla entendido los exports e imports nos ha respetado el reto de codigo dejandonoslo igual. Sui queremos que sea compatile con navegadores que no soportan ecma 6 debemos usar una herramienta como babel
+
+Aqui estan las instrucciones
+http://babeljs.io/docs/setup/#installation
+
+npm install --save-dev babel-loader babel-core
+
+module: {
+  loaders: [
+    { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
+  ]
+}
+
+npm install babel-preset-env --save-dev
+
+.babelrc

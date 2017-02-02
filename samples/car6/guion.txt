@@ -1,0 +1,46 @@
+A continuacion comenzaremos a trabajar con typescript. 
+
+
+
+
+Podemos ir https://www.typescriptlang.org/play/index.html
+y ver que pasa si ponemos nuestro flamante archivo car.js del ultimo ejercicio
+se queja de que las varibles estan implicitamente declaradas
+
+las declaramos.
+jugamos con los tipos
+con el private en la declaracion
+
+Ejercicio. Hacer lo mismo con RaceCar.js y Index2.js
+quitando imports y exports
+
+
+cuabdoi lo tengais en vez de devolver el objeto Car en la promesa devolver una interfaz que solo tenga las porpiedades currentSpeed y make
+
+cuando lo tengais los copiais a raceCar.tsc y index.tsc añadis los exports e imports y provais de ejecutarlos
+
+si teneis problemas con PROMESAS
+npm i --save @types/es6-promise
+
+
+
+Vamos a mirar de convertir el proyecto que hasta ahora hemos hecho en javascript a typescript
+
+
+
+definidlas usando public
+
+tiparlas
+mirad que pasa si la definis como publica en 
+
+
+
+
+Lo ultimo que haremos sera configurar nuestro flamante webpack para que entienda typescript
+
+npm install awesome-typescript-loader --save-dev
+
+
+configuramos el tsconfig para que no se pase de la ralla
+y el webpack.config.js
+
